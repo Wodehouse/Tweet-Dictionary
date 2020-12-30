@@ -1,12 +1,8 @@
 #pragma once
 
 /*
-  Copyright (c) 2020
-  Swarthmore College Computer Science Department, Swarthmore PA
-  J. Brody, A. Danner, M. Gagne, L. Meeden, Z. Palmer, A. Soni, M. Wehar
-  Distributed as course material for Fall 2020
-  CPSC 035: Data Structures and Algorithms
-  https://tinyurl.com/yyr8mdoh
+  Wodehouse
+  hash table header file
 */
 
 #include "linearDictionary.h"
@@ -30,9 +26,7 @@ template <typename K, typename V> class HashTable : public Dictionary<K, V> {
      */
     ~HashTable();
 
-    /* Dictionary ADT Methods.
-       You must implement these acording to ADT specification
-     */
+   
     int getSize();
     bool isEmpty();
     void insert(K key, V value);
@@ -53,7 +47,7 @@ template <typename K, typename V> class HashTable : public Dictionary<K, V> {
     int size;
     int capacity;
     float greatestLoadFactor;
-    /* TODO: put your member variables and helper methods here */
+    
 };
 
 #include "hashTable-inl.h"
