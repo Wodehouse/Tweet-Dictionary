@@ -1,10 +1,6 @@
 /*
-  Copyright (c) 2020
-  Swarthmore College Computer Science Department, Swarthmore PA
-  J. Brody, A. Danner, M. Gagne, L. Meeden, Z. Palmer, A. Soni, M. Wehar
-  Distributed as course material for Fall 2020
-  CPSC 035: Data Structures and Algorithms
-  https://tinyurl.com/yyr8mdoh
+  Wodehouse
+  linear dictionary header file
 */
 
 #include <stdexcept>
@@ -139,4 +135,4 @@ template <typename T> void removeFromVector(vector<T> &list, int index){
   list.erase(list.begin()+index, list.begin()+index+1);
 }
 
-// TODO: put any other definitions here
+
