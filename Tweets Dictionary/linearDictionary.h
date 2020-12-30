@@ -1,12 +1,8 @@
 #pragma once
 
 /*
-  Copyright (c) 2020
-  Swarthmore College Computer Science Department, Swarthmore PA
-  J. Brody, A. Danner, M. Gagne, L. Meeden, Z. Palmer, A. Soni, M. Wehar
-  Distributed as course material for Fall 2020
-  CPSC 035: Data Structures and Algorithms
-  https://tinyurl.com/yyr8mdoh
+  Wodehouse
+  linear dictionary header file
 */
 
 #include "adts/dictionary.h"
@@ -27,8 +23,7 @@ class LinearDictionary : public Dictionary<K, V> {
      */
     ~LinearDictionary();
 
-    /* Dictionary ADT Methods.  You must implement these acording to ADT
-       specification.  All of these methods are expected to run in O(n) time.
+    /* Dictionary ADT Methods.
      */
     int getSize();
     bool isEmpty();
@@ -41,7 +36,7 @@ class LinearDictionary : public Dictionary<K, V> {
     vector<pair<K, V>> getItems();
 
   private:
-    /* TODO: put your member variables and helper methods here */
+    
     vector<pair<K, V>> list;
     int size;
 };
